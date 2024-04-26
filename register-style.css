@@ -1,0 +1,63 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('4.png'); /* Replace with your desired background image URL */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+
+.login-container {
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #FFF; 
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Added box shadow for a floating effect */
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+h2 {
+    color: #007bff; /* Blue color */
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333; /* Dark gray color */
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button[type="button"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s; /* Add a smooth transition on hover */
+}
+
+button[type="button"]:hover {
+    background-color: #0056b3;
+}
+
+/* Add more CSS styling as needed to improve the look and feel of your page */

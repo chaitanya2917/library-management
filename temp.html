@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>New Registration</title>
+    <link rel="stylesheet" href="register-style.css"> 
+</head>
+<body>
+    <div class="login-container">   
+        <h2>Register</h2>
+        <form onsubmit="Register(event)">
+            <label for="email">Email ID:</label>
+            <input type="email" id="email" name="email" required>    
+            <label for="userPassword">🔑Password:</label>
+            <input type="password" id="userPassword" name="userPassword" required>
+            <input type="submit" id="Submit" name="submit_details" value="sign up"/>
+            <button type="submit" onclick="register(event)">Register</button>
+        </form>
+    </div>
+    
+</body>
+<script type="module">
+    
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
+    import { getDatabase } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-database.js";
+    import { getAuth,createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-auth.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyBpp9ZcMYgvNf-fRRroV4xjcVlAjTbKNTE",
+      authDomain: "login-details-a2221.firebaseapp.com",
+      databaseURL: "https://login-details-a2221-default-rtdb.firebaseio.com",
+      projectId: "login-details-a2221",
+      storageBucket: "login-details-a2221.appspot.com",
+      messagingSenderId: "530026696513",
+      appId: "1:530026696513:web:9003a9208c8d0e5de0dbc0"
+    };
+
+    
+  const app = initializeApp(firebaseConfig);
+  const database=getDatabase(app)
+  const auth=getAuth(app)
+
+  Submit.addEventListner('click',(e)=>
+  {
+    createUserWithEmailAndPassword(auth,email, userPassword)
+    .then((function) => {
+        const user=function.user;
+        alert("User Created!!");
+        })
+        
+    .catch((error) => {
+        const error_code=error.code
+        const error_message=error.message
+        alert(error_message)
+    });
+  });
+  </script>
+</html>

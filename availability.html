@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Book Availability</title>
+    <link rel="stylesheet" href="availability.css">
+</head>
+<body>
+    <div class="availcontainer">
+        <h1>Check Book Availability</h1>
+        <div class="search-container">
+            <input type="text" id="book-title" placeholder="Enter book title">
+            <button onclick="checkAvailability()">Check Availability</button>
+        </div>
+        <div id="availability-result"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.3/xlsx.full.min.js"></script>
+    <script src="availability.js"></script>
+</body>
+</html>

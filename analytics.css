@@ -1,0 +1,41 @@
+/* Reset some default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply a background color to the body */
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for the sidebar (customize as needed) */
+.sidebar {
+    color:white;
+}
+
+/* Style for the analytics content section */
+.home {
+    padding: 20px;
+}
+
+/* Style for the chart containers */
+.chart-container,
+.pie-chart-container {
+    width: 35%;
+    margin: 0 2.5%;
+    display: inline-block;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Customize your chart style as needed */
+.analytics-content{
+    display:flex;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login - Smart Waste Management Dashboard</title>
+    <link rel="stylesheet" href="login-style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/f6029eaaf5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Enter Data</h2>
+        <form>
+            <label for="userId">Height</label>
+            <input type="text" id="userId" placeholder="level" name="userId" required>
+            <label for="userPassword">Weight</label>
+            <input type="text" id="userPassword" placeholder="kg" name="userPassword" required>
+            <div class="button-container">
+                <button type="button" id="submitData" class="button" onclick="login()">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <script type="module">
+        document.getElementById('submitData').addEventListener('click', (e) => {
+            var height = document.getElementById('userId').value;
+            var weight = document.getElementById('userPassword').value;            
+        });
+
+    </script>
+
+</body>
+</html>

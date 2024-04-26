@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="navigation1.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <br>
+    <br><br>
+    <header>
+        <h1>Admin User</h1>
+        <br>
+        <br>
+    </header>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="liblogo.png" alt="logo">
+                    
+                </span>
+                <div class="text header-text">
+                    <span class="name">Library</span>
+                    <span class="procession">Automated</span>
+                </div>
+            </div>
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+        <div class="menu-bar">
+            <div class="menu">
+                <li class="search-box">
+                        <i class='bx bx-search icon'></i>
+                        <input type="text" placeholder="Search...">
+                </li>
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-bar-chart-alt-2 icon'></i>
+                            <span class="text nav-text" onclick="dashboard()">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-bell icon'></i>
+                            <span class="text nav-text" onclick="notification()">Feedback</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-pie-chart-alt icon' ></i>
+                            <span class="text nav-text" onclick="analytics()">Analytics</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-heart icon'></i>
+                            <span class="text nav-text" onclick="likes()">Likes</span>
+                        </a>
+                    </li>
+                    <!-- <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-wallet icon'></i>
+                            <span class="text nav-text">Wallets</span>
+                        </a>
+                    </li> -->
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-home-alt icon'></i>
+                            <span class="text nav-text" onclick="home()">Home</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="botton-content">
+                <li class="" onclick="logoff()">
+                    <a href="#">
+                        <i class='bx bx-log-out icon'></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+                <li class="mode">
+                    <div class="moon-sun">
+                        <i  class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark Mode</span>
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+            </div>
+        </div>
+    </nav>
+    <body>
+        <div class="main-content">
+            <div class="container">
+                <form id="bookForm">
+                    <div class="input-group">
+                        <input type="text" id="title" name="title" placeholder="Title" required>
+                        <input type="text" id="author" name="author" placeholder="Author" required>
+                        <input type="number" id="year" name="year" placeholder="Year" required>
+                        <button type="submit">Add Book‎ ‎ ‎ ‎ ‎   </button>
+                    </div>
+                </form>
+            </div>
+            <div class="container">
+                <form id="bookForm">
+                    <div class="input-group">
+                        <input type="text" id="title" name="title" placeholder="Title" required>
+                        <input type="text" id="author" name="author" placeholder="Author" required>
+                        <input type="number" id="year" name="year" placeholder="Year" required>
+                        <button type="submit">Delete Book</button>
+                    </div>
+                </form>
+            </div>
+            <h1><a href="use.html" id="usebook">books in use</a></h1>
+        </div>
+        
+        <script src="navigation1.js"></script>
+
+    </body>
+    
+    
+    <script src="navigation1.js"></script>
+    <script>
+        function logoff(){
+            window.location.href = "index.html";
+        }
+    </script>
+    <script>
+        function analytics(){
+            window.location.href = "count.html";
+        }
+    </script>
+    <script>
+        function dashboard(){
+            window.location.href = "navigation1.html";
+        }
+    </script>
+    <script>
+        function notification(){
+            window.location.href = "notification.html";
+        }
+    </script>
+    <script>
+        function home(){
+            window.location.href = "index.html";
+        }
+    </script>
+    <script type="module" src="navigation1.js"></script>
+    
+</body>
+</html>

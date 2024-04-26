@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="navigation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <br>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="liblogo.png" alt="logo">
+                    
+                </span>
+                <div class="text header-text">
+                    <span class="name">Library</span>
+                    <span class="procession">Automated</span>
+                </div>
+            </div>
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+        <div class="menu-bar">
+            <div class="menu">
+                <li class="search-box">
+                        <i class='bx bx-search icon'></i>
+                        <input type="text" placeholder="Search...">
+                </li>
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-bar-chart-alt-2 icon'></i>
+                            <span class="text nav-text" onclick="dashboard()">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-bell icon'></i>
+                            <span class="text nav-text" onclick="notification()">Notification</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-pie-chart-alt icon' ></i>
+                            <span class="text nav-text" onclick="analytics()">Analytics</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-heart icon'></i>
+                            <span class="text nav-text" onclick="likes()">Likes</span>
+                        </a>
+                    </li>
+                    <!-- <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-wallet icon'></i>
+                            <span class="text nav-text">Wallets</span>
+                        </a>
+                    </li> -->
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-home-alt icon'></i>
+                            <span class="text nav-text" onclick="home()">Home</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="botton-content">
+                <li class="" onclick="logoff()">
+                    <a href="#">
+                        <i class='bx bx-log-out icon'></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+                <li class="mode">
+                    <div class="moon-sun">
+                        <i  class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark Mode</span>
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+            </div>
+        </div>
+    </nav>
+    <body>
+        <div class="main-content">
+            <div class="notification">
+                <div class="notiglow"></div>
+                <div class="notiborderglow"></div>
+                <div class="notititle">Book Return</div>
+                <div class="notibody">Dear Student the book titled "datastructures" have to be returned before date: "dd:mm:yyyy"</div>
+              </div>
+            
+        </div>
+        <br>
+        <div class="main-content">
+            <div class="notification">
+                <div class="notiglow"></div>
+                <div class="notiborderglow"></div>
+                <div class="notititle">Book Return</div>
+                <div class="notibody">Dear Student the book titled "software engineering" have to be returned before date: "dd:mm:yyyy"</div>
+              </div>
+            
+        </div>
+        
+        <script src="navigation.js"></script>
+
+        
+    </body>
+    <script>
+        function logoff(){
+            window.location.href = "index.html";
+        }
+    </script>
+    <script>
+        function analytics(){
+            window.location.href = "analytics.html";
+        }
+    </script>
+    <script>
+        function dashboard(){
+            window.location.href = "navigation1.html";
+        }
+    </script>
+    <script>
+        function notification(){
+            window.location.href = "notification.html";
+        }
+    </script>
+    <script>
+        function home(){
+            window.location.href = "index.html";
+        }
+    </script>
+    <script type="module" src="navigation1.js"></script>
+    
+</body>
+</html>

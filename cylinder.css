@@ -1,0 +1,23 @@
+.dashboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.cylinder {
+    width: 200px;
+    height: 400px;
+    background: #c3d7eb;
+    border-radius: 10%;
+    position: relative;
+    overflow: hidden;
+}
+
+.fill-level {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgb(28, 163, 236); /* Default fill color */
+    transition: height 0.5s;
+}
